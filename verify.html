@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Verify</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <h1>Enter Code</h1>
+    <p>Please check your phone for code</p>
+
+    <form action="/verify" method="POST">
+        <input required type="numeric" placeholder="Enter Code" name="code">
+            <br><br>
+        <input required type="tel" placeholder="Enter Phone Number" name="phone" pattern="[0-9]{2}[0-9]{5}[0-9]{5}"
+                maxlength="12" title="Twelve digits code">
+            <br>
+        <label style="font-size:12px;padding-left:20px"> Eg : CountryCode(without '+')7006301967 </label>
+        <br><br>
+        <input id="submit-button" type="submit">
+    </form>
+
+</body>
+
+</html>
